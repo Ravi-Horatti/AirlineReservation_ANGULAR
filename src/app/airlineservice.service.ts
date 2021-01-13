@@ -10,8 +10,9 @@ export class AirlineserviceService {
 
 
   postDetails(data){
-    this.http.post<JSON>('http://localhost:3000/addUser',data).subscribe()
-}
+    this.http.post<JSON>('http://localhost:3000/addUser',data).subscribe() // Post Api to add user to local db
+    
+  }
  
 
 }
